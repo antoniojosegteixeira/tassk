@@ -52,12 +52,12 @@ export default function Task({ navigation }) {
         <View style={styles.footerNavContainer}>
           <View>
             <TouchableOpacity onPress={() => console.log("press")}>
-              <FontAwesome name="home" size={32} color="#fff" />
+              <FontAwesome name="home" size={30} color="#fff" />
             </TouchableOpacity>
           </View>
           <View>
             <TouchableOpacity onPress={() => console.log("press")}>
-              <FontAwesome name="user" size={32} color="#fff" />
+              <FontAwesome name="user" size={30} color="#fff" />
             </TouchableOpacity>
           </View>
         </View>

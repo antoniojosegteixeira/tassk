@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
   footer: {
     backgroundColor: colors.mediumBlue,
-    height: 100,
+    height: 80,
     borderTopEndRadius: 50,
     borderTopStartRadius: 50,
   },
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     alignSelf: "center",
     position: "absolute",
-    bottom: 60,
+    bottom: 45,
   },
   footerNavButton: {
     width: 60,
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignSelf: "center",
     justifyContent: "space-between",
-    marginTop: 35,
+    marginTop: 28,
     width: "70%",
     maxWidth: 250,
   },

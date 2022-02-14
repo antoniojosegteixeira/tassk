@@ -17,7 +17,20 @@ import { FontAwesome } from "@expo/vector-icons";
 import TaskList from "../../shared/TaskList/TaskList";
 
 export default function Task({ navigation }) {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState([
+    {
+      _id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+      title: "First Item",
+    },
+    {
+      _id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+      title: "Second Item",
+    },
+    {
+      _id: "58694a0f-3da1-471f-bd96-145571e29d72",
+      title: "Third Item",
+    },
+  ]);
 
   useEffect(() => {
     const taskCollection = collection(database, "tasks");
@@ -39,10 +52,12 @@ export default function Task({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <ScrollView style={styles.main}>
+      <View style={styles.main}>
         <Text style={styles.greeting}>Olá, User</Text>
         <Text style={styles.greetingSub}>Bom dia</Text>
-        <TaskList />
+      </View>
+      <ScrollView style={styles.main}>
+        <TaskList tasks={tasks} />
       </ScrollView>
       <View style={styles.footer}>
         <TouchableHighlight

@@ -24,6 +24,18 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: 60,
   },
+  footerNavButton: {
+    width: 60,
+    height: 60,
+  },
+  footerNavContainer: {
+    flexDirection: "row",
+    alignSelf: "center",
+    justifyContent: "space-between",
+    marginTop: 35,
+    width: "70%",
+    maxWidth: 250,
+  },
 });
 
 export default styles;

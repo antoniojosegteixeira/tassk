@@ -5,6 +5,7 @@ import {
   SafeAreaView,
   Button,
   TouchableHighlight,
+  TouchableOpacity,
   FlatList,
   ScrollView,
 } from "react-native";
@@ -48,6 +49,18 @@ export default function Task({ navigation }) {
         >
           <FontAwesome name="plus" size={32} color="#2F394B" />
         </TouchableHighlight>
+        <View style={styles.footerNavContainer}>
+          <View>
+            <TouchableOpacity onPress={() => console.log("press")}>
+              <FontAwesome name="home" size={32} color="#fff" />
+            </TouchableOpacity>
+          </View>
+          <View>
+            <TouchableOpacity onPress={() => console.log("press")}>
+              <FontAwesome name="user" size={32} color="#fff" />
+            </TouchableOpacity>
+          </View>
+        </View>
       </View>
     </View>
   );

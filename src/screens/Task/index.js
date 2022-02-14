@@ -37,8 +37,9 @@ export default function Task({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <ScrollView>
-        <Text>Index</Text>
+      <ScrollView style={styles.main}>
+        <Text style={styles.greeting}>Olá, User</Text>
+        <Text style={styles.greetingSub}>Bom dia</Text>
       </ScrollView>
       <View style={styles.footer}>
         <TouchableHighlight

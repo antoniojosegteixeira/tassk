@@ -7,6 +7,19 @@ const styles = StyleSheet.create({
     backgroundColor: colors.darkBlue,
     paddingTop: 20,
   },
+  main: {
+    paddingHorizontal: 20,
+  },
+  greeting: {
+    fontSize: 30,
+    color: "white",
+  },
+  greetingSub: {
+    fontSize: 18,
+    color: "white",
+    opacity: 0.7,
+    paddingTop: 3,
+  },
   footer: {
     backgroundColor: colors.mediumBlue,
     height: 80,

@@ -4,13 +4,16 @@ import {
   Text,
   SafeAreaView,
   Button,
-  TouchableOpacity,
+  TouchableHighlight,
   FlatList,
+  ScrollView,
 } from "react-native";
 import { database } from "../../config/firebase";
 import { collection, onSnapshot } from "firebase/firestore";
+import styles from "./style";
+import { FontAwesome } from "@expo/vector-icons";
 
-export default function Task() {
+export default function Task({ navigation }) {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
@@ -25,17 +28,27 @@ export default function Task() {
         });
       });
 
-      setTasks([...tasks, list]);
+      setTasks(list);
     });
 
     return () => unsubscribe();
   }, []);
 
-  console.log(tasks);
-
   return (
-    <View>
-      <Text>Task</Text>
+    <View style={styles.container}>
+      <ScrollView>
+        <Text>Index</Text>
+      </ScrollView>
+      <View style={styles.footer}>
+        <TouchableHighlight
+          activeOpacity={0.8}
+          underlayColor="#b7c1d1"
+          onPress={() => console.log("press")}
+          style={styles.addButton}
+        >
+          <FontAwesome name="plus" size={32} color="#2F394B" />
+        </TouchableHighlight>
+      </View>
     </View>
   );
 }

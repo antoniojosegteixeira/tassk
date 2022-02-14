@@ -1,7 +1,7 @@
 import React from "react";
-import colors from "../colors/colors";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
+import styles from "./styles";
 
 export default function Header() {
   return (
@@ -22,19 +22,3 @@ export default function Header() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  header: {
-    width: "100%",
-    height: "100%",
-    backgroundColor: colors.darkBlue,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    color: "white",
-  },
-  title: {
-    color: "white",
-    fontSize: 19,
-  },
-});

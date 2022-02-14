@@ -6,7 +6,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Task from "./src/screens/Task";
 import NewTask from "./src/screens/NewTask";
 import Details from "./src/screens/Details";
-import Header from "./src/shared/Header";
+import Header from "./src/shared/Header/Header";
 import colors from "./src/colors/colors";
 
 const homeOptions = {

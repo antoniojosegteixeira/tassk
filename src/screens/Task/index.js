@@ -14,6 +14,8 @@ import { collection, onSnapshot } from "firebase/firestore";
 import styles from "./style";
 import { FontAwesome } from "@expo/vector-icons";
 
+import TaskList from "../../shared/TaskList/TaskList";
+
 export default function Task({ navigation }) {
   const [tasks, setTasks] = useState([]);
 
@@ -40,6 +42,7 @@ export default function Task({ navigation }) {
       <ScrollView style={styles.main}>
         <Text style={styles.greeting}>Olá, User</Text>
         <Text style={styles.greetingSub}>Bom dia</Text>
+        <TaskList />
       </ScrollView>
       <View style={styles.footer}>
         <TouchableHighlight

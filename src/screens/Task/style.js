@@ -4,8 +4,7 @@ import colors from "../../colors/colors";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    color: "red",
-    backgroundColor: "#fff",
+    backgroundColor: colors.darkBlue,
     paddingTop: 20,
   },
   footer: {

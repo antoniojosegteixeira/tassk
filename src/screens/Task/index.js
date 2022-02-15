@@ -63,7 +63,7 @@ export default function Task({ navigation }) {
         <TouchableHighlight
           activeOpacity={0.8}
           underlayColor="#b7c1d1"
-          onPress={() => console.log("press")}
+          onPress={() => navigation.navigate("Nova Tarefa")}
           style={styles.addButton}
         >
           <FontAwesome name="plus" size={30} color="#2F394B" />

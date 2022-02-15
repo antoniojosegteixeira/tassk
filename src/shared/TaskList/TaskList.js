@@ -1,5 +1,5 @@
 import React from "react";
-import { FlatList, TouchableOpacity, Text, View } from "react-native";
+import { TouchableOpacity, Text, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { FontAwesome } from "@expo/vector-icons";
 import styles from "./styles";

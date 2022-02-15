@@ -21,15 +21,32 @@ const homeOptions = {
   },
 };
 
+const newTaskOptions = {
+  headerStyle: {
+    shadowColor: "transparent",
+  },
+  headerTitleStyle: {
+    fontWeight: "bold",
+  },
+};
+
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Task" screenOptions={homeOptions}>
-        <Stack.Screen name="Task" component={Task} />
-        <Stack.Screen name="NewTask" component={NewTask} />
-        <Stack.Screen name="Details" component={Details} />
+      <Stack.Navigator initialRouteName="Cronograma">
+        <Stack.Screen
+          name="Cronograma"
+          component={Task}
+          options={homeOptions}
+        />
+        <Stack.Screen
+          name="Nova Tarefa"
+          component={NewTask}
+          options={newTaskOptions}
+        />
+        <Stack.Screen name="Detalhes" component={Details} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -2,15 +2,31 @@ import { StyleSheet } from "react-native";
 import colors from "../../colors/colors";
 
 const styles = StyleSheet.create({
-  container: {
+  page: {
     flex: 1,
     backgroundColor: colors.darkBlue,
+    paddingBottom: 40,
+  },
+  container: {
+    flex: 1,
+    backgroundColor: "transparent",
     borderTopEndRadius: 15,
     borderTopStartRadius: 15,
-    padding: 20,
+    paddingHorizontal: 20,
   },
   formCell: {
     marginBottom: 20,
+  },
+  formDateCell: {
+    marginBottom: 30,
+    justifyContent: "center",
+  },
+  dateText: {
+    position: "absolute",
+    textAlign: "center",
+    color: "white",
+    fontSize: 18,
+    opacity: 0.7,
   },
   text: {
     color: "white",

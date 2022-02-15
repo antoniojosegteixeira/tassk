@@ -19,9 +19,20 @@ export default function NewTask() {
         <Text style={styles.text}>Nome</Text>
         <TextInput style={styles.input}></TextInput>
       </View>
-
-      <Text style={styles.text}>Horário</Text>
-      <TextInput style={styles.input}></TextInput>
+      <View style={styles.formCell}>
+        <Text style={styles.text}>Horário</Text>
+        <TextInput style={styles.input}></TextInput>
+      </View>
+      <View style={styles.formCell}>
+        <Text style={styles.text}>Descrição</Text>
+        <View style={styles.textAreaContainer}>
+          <TextInput
+            style={styles.textArea}
+            multiline={true}
+            numberOfLines={3}
+          ></TextInput>
+        </View>
+      </View>
     </View>
   );
 }

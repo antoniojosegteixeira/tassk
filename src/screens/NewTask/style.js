@@ -24,6 +24,19 @@ const styles = StyleSheet.create({
     fontSize: 22,
     color: "white",
   },
+  textAreaContainer: {
+    height: 80,
+    justifyContent: "flex-start",
+  },
+  textArea: {
+    textAlignVertical: "top",
+    height: "100%",
+    fontSize: 22,
+    color: "white",
+    borderBottomColor: "#ffffffba",
+    borderBottomWidth: 1,
+    paddingVertical: 10,
+  },
 });
 
 export default styles;

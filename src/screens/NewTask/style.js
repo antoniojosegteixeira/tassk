@@ -2,17 +2,11 @@ import { StyleSheet } from "react-native";
 import colors from "../../colors/colors";
 
 const styles = StyleSheet.create({
-  page: {
-    flex: 1,
-    backgroundColor: colors.darkBlue,
-    paddingBottom: 40,
-  },
   container: {
     flex: 1,
-    backgroundColor: "transparent",
-    borderTopEndRadius: 15,
-    borderTopStartRadius: 15,
+    backgroundColor: colors.darkBlue,
     paddingHorizontal: 20,
+    paddingTop: 15,
   },
   formCell: {
     marginBottom: 20,
@@ -66,6 +60,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 5,
     elevation: 3,
+    marginBottom: 60,
   },
   createButtonText: {
     fontSize: 18,

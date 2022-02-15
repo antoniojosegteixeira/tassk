@@ -24,7 +24,9 @@ const homeOptions = {
 const newTaskOptions = {
   headerStyle: {
     shadowColor: "transparent",
+    backgroundColor: colors.darkBlue,
   },
+  headerTintColor: "white",
   headerTitleStyle: {
     fontWeight: "bold",
   },

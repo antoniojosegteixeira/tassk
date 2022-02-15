@@ -33,6 +33,9 @@ export default function NewTask() {
           ></TextInput>
         </View>
       </View>
+      <TouchableOpacity style={styles.createButton}>
+        <Text style={styles.createButtonText}>Confirmar</Text>
+      </TouchableOpacity>
     </View>
   );
 }

@@ -37,6 +37,23 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     paddingVertical: 10,
   },
+  createButton: {
+    paddingVertical: 15,
+    borderRadius: 8,
+    backgroundColor: "white",
+    alignItems: "center",
+    shadowColor: "#fff",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.2,
+    shadowRadius: 5,
+    elevation: 3,
+  },
+  createButtonText: {
+    fontSize: 18,
+  },
 });
 
 export default styles;

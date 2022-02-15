@@ -66,7 +66,7 @@ export default function Task({ navigation }) {
           onPress={() => console.log("press")}
           style={styles.addButton}
         >
-          <FontAwesome name="plus" size={32} color="#2F394B" />
+          <FontAwesome name="plus" size={30} color="#2F394B" />
         </TouchableHighlight>
         <View style={styles.footerNavContainer}>
           <View>
